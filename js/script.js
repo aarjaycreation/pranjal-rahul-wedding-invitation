@@ -60,22 +60,44 @@ var x = setInterval(function() {
     }
 }, 1000);
 
+
+
+
+
+    
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '1.5rem',
     duration: 2000,
     delay: 200,
-    reset: true
+    // reset: true
 });
 
 
 // sr.reveal(`.rahul`,{ delay: 300, origin: 'top' })
 sr.reveal(`.gif,.home_txt`,{ delay: 400, origin: 'top' })
-sr.reveal(`.happiness`,{ delay: 800, origin: 'bottom' })
+sr.reveal(`.happiness,.hindi_text`,{ delay: 800, origin: 'bottom' })
 sr.reveal(`.responsive-table__row`, { interval: 100 })
 sr.reveal(`.rahul,.home__bottom,.top-right-decoration,.top-left-decoration,.newsletter__description`, { origin: 'left', delay: 100})
 sr.reveal(`.pranjal,.footer,.newsletter__form`, { origin: 'right', delay: 100})
+
+
+
+
+
+// script.js
+// window.addEventListener('load', () => {
+//     console.log('in load')
+//     const leftCurtain = document.querySelector('.curtain_left');
+//     const rightCurtain = document.querySelector('.curtain_right');
+
+//     setTimeout(() => {
+//         leftCurtain.style.transform = 'translateX(-100%)';
+//         rightCurtain.style.transform = 'translateX(100%)';
+//     }, 5000); // Adjust the delay as needed
+// });
 
 // being a bit cool :p  
 var styles = [

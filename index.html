@@ -36,7 +36,14 @@
 </head>
 
 <body>
-   <!-- sakura -->
+   <!--=============== curtain ===============-->
+   <div class="curtain-container">
+      <div class="curtain curtain_left"></div>
+      <div class="curtain curtain_right"></div>
+  </div>
+
+
+   <!--=============== sakura falling ===============-->
    <div class="sakura-falling"></div>
    <img src="assets/img/right.png" alt="image-top-right" class="top-right-decoration">
    <img src="assets/img/right.png" alt="image-top-left" class="top-left-decoration">
@@ -56,10 +63,9 @@
 
       </div>
    </div>
-   <!-- Table Section -->
+   <!--=============== Mahurat table ===============-->
    <div class="table_container">
       <table class="responsive-table">
-         <!-- Table Body Section -->
          <tbody class="responsive-table__body">
             <tr class="responsive-table__row">
                <td class="responsive-table__body__text responsive-table__body__text--name">Ganesh Pujan -</td>
@@ -87,8 +93,9 @@
          </tbody>
       </table>
    </div>
-
+<!--=============== time ===============-->
    <div id="time" class="time"></div>
+   <!--=============== home bottom ===============-->
    <div class="home__bottom">
       <p class="dance-med">
          dinner & dancing to follow
@@ -103,8 +110,8 @@
          </a>
       </div>
    </div>
-
-   <p class="footer">
+<!--=============== CTA ===============-->
+   <p class="CTA">
       Can't wait to celebrate auspicious moment of our family with you! <br>
       Just a ping away for any queries: <br> <a href="tel: +91 9783351443">+91 9783351443</a>
       <span></span>
@@ -131,24 +138,67 @@
          
       </div>
    </section>
+   <!--=============== hindi text ===============-->
+   <div>
+      <blockquote class="hindi_text">हल्दी है चंदन है रिश्तों का बंधन है ।
+      <br>पुरा परिवार सहित आपका हार्दिक अभिनंदन है ।।
+      </blockquote>
+    </div>
+    <!--=============== music ===============-->
    <div class="music">
       <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>
    </div>
+   <!--=============== happiness ===============-->
    <div class="happiness">Join us in our happiness!
       <div class="socials">
          <a href="https://www.instagram.com/rahuljangir.works/" target="_blank"><i class='bx bxl-instagram'></i></a>
          <!-- <a href="https://aarjaycreation-works.web.app/" target="_blank"><i class='bx bx-briefcase-alt-2'></i></a> -->
       </div>
    </div>
-   <div class="bottom">
+   <!--=============== bottom ===============-->
+   <div class="footer">
       <p>Built with love by <a href="https://aarjaycreation-works.web.app/" target="_blank">
             <span>aarjaycreation.</span></a></p>
    </div>
-   <!-- js -->
+
+
+          <!--=============== floating button ===============-->
+          <div class="floating">
+            <div class="floating__container" id="floating">
+                <div class="floating__toggle" id="floating-toggle">
+                    <i class='bx bx-md bx-plus' title="click"></i>
+                </div>
+
+                <ul>
+                    <a href="#" class="floating__link" title="top">
+                        <div class="floating__icon">
+                            <i class='bx bx-sm bx-arrow-to-top'></i>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/+91 9783351443?text=Hi,%20i%20have%20a%20project%20for%20you."
+                        class="floating__link" title="whatsapp me">
+                        <div class="floating__icon">
+                            <i class='bx bx-sm bxl-whatsapp'></i>
+                        </div>
+                    </a>
+
+                    <a href="tel:+91 9783351443" class="floating__link" title="call me">
+                        <div class="floating__icon">
+                            <i class='bx bx-sm bx-phone'></i>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+
+<!--=============== javascripts ===============-->
    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
    <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script src="./js/scrollreveal.min.js"></script>
+   <script src="./js/main.js"></script>
    <script src="./js/script.js"></script>
    <script src="./js/joiner.js"></script>
    <script type="module">

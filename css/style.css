@@ -26,7 +26,9 @@
 	--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 button,
 input {
 	border: none;
@@ -438,7 +440,8 @@ body {
 	/* font-family: 'Ubuntu', sans-serif; */
 	font-family: 'Poppins', sans-serif;
 	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
+	margin: 0;
+    padding: 0;
 }
 
 img {
@@ -641,8 +644,8 @@ body {
 	font-weight: 900;
 }
 
-.footer,
-.footer a {
+.CTA,
+.CTA a {
 	color: var(--primary-color);
 	text-align: center;
 	font-size: 16px;
@@ -650,7 +653,7 @@ body {
 
 }
 
-.footer a:hover {
+.CTA a:hover {
 	padding: 0.1rem;
 	color: var(--title-color);
 	background-color: var(--primary-color);
@@ -699,14 +702,14 @@ a {
 	letter-spacing: 0pt;
 }
 
-.bottom {
+.footer {
 	font-size: 0.6rem;
 	font-weight: 600;
 	color: var(--title-color);
 
 }
 
-.bottom span {
+.footer span {
 	color: var(--primary-color);
 
 }
@@ -753,6 +756,42 @@ a {
 .newsletter__input::placeholder {
 	color: var(--text-color);
 }
+
+blockquote {
+	position: relative;
+	padding-left: 30px;
+	font-weight: 600;
+	color: var(--primary-color);
+	padding: 1em;
+	padding-right: 0.25em;
+	margin-left: 2.25em;
+	margin-right: 0.2em;
+	max-width: 35em;
+	font-size: 15px;
+  }
+  blockquote::before {
+		content: "“";
+		font-family: serif;
+		position: absolute;
+		right: 100%;
+		font-size: 75px;
+		line-height: 0px;
+		top: 50px;
+		color: var(--primary-color);
+		animation: dancing 1s linear infinite;
+		display: inline-block;
+		transform: rotate(13deg);
+	}
+	blockquote::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 100%;
+		width: 80px;
+		height: 5px;
+		background: var(--second-color);
+		left: 1em;
+	}
 
 /*=============== BUTTONS ===============*/
 .button {
@@ -927,3 +966,172 @@ td:hover {
 	font-size: 16px !important;
 	font-weight: 600 !important;
 }
+
+
+
+.curtain-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.curtain {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background-color: var(--second-color); /* Change to your curtain color */
+    transition: transform 1s ease-in-out;
+}
+
+.curtain_left {
+    left: 0;
+    transform-origin: left;
+    background-image: url('../assets/img/sonali.jpeg');
+	background-size: cover; 
+    background-position: left; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.curtain_right {
+    right: 0;
+    transform-origin: right;
+    background-image: url('../assets/img/sonali.jpeg');
+	background-size: cover; 
+    background-position: right; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+/*=============== floating ===============*/
+
+
+
+.floating {
+    /* height: 100vh; */
+    display: grid;
+    place-items: center;
+    /* background-color: hsl(234, 48%, 97%); */
+}
+
+.floating__container {
+    position: fixed;
+    right: 1.5rem;
+    bottom: -20%;
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+
+}
+
+/* Show scroll */
+.show-scroll {
+    bottom: 3rem;
+}
+
+.floating__toggle,
+.floating__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--body-color);
+}
+
+.floating__toggle {
+    color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    box-shadow: 6px 6px 24px var(--primary-color),
+        -6px -6px 24px var(--body-color),
+        inset -6px -6px 24px var(--primary-color),
+        inset 6px 6px 24px var(--body-color);
+
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s;
+}
+
+.floating__toggle i {
+    transition: transform 0.4s ease-in-out;
+}
+
+.floating__toggle:hover {
+    box-shadow: -6px -6px 24px var(--primary-color),
+        6px 6px 24px var(--body-color),
+        inset 6px 6px 24px var(--primary-color),
+        inset -6px -6px 24px var(--body-color);
+    transform: scale(0.95);
+}
+
+.floating__icon,
+.floating__link {
+    width: 40px;
+    height: 40px;
+}
+
+.floating__icon {
+    font-size: 1rem;
+    color: var(--primary-color);
+    box-shadow: -4px -4px 16px var(--primary-color),
+        4px 4px 16px var(--body-color),
+        inset 4px 4px 16px var(--primary-color),
+        inset -4px -4px 16px var(--body-color);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.floating__icon:hover {
+    box-shadow: 4px 4px 16px var(--primary-color),
+        -4px -4px 16px var(--body-color),
+        inset -4px -4px 16px var(--primary-color),
+        inset 4px 4px 16px var(--body-color);
+}
+
+.floating__link {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.6s;
+    z-index: 1;
+}
+
+.floating__link:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.floating__link:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.floating__link:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+/* Rotate toggle */
+.active.floating__toggle i {
+    transform: rotate(135deg);
+}
+
+/* Move icons */
+.active~ul .floating__link {
+    opacity: 1;
+}
+
+.active~ul .floating__link:nth-child(1) {
+    transform: translate(-3.5rem, -3.5rem);
+}
+
+.active~ul .floating__link:nth-child(2) {
+    transform: translate(-5.5rem);
+}
+
+.active~ul .floating__link:nth-child(3) {
+    transform: translate(-3.5rem, 3.5rem);
+}
+
