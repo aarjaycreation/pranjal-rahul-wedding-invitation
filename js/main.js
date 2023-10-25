@@ -1,12 +1,12 @@
-window.addEventListener('load', () => {
-    const leftCurtain = document.querySelector('.curtain_left');
-    const rightCurtain = document.querySelector('.curtain_right');
+// window.addEventListener('load', () => {
+//     const leftCurtain = document.querySelector('.curtain_left');
+//     const rightCurtain = document.querySelector('.curtain_right');
 
-    setTimeout(() => {
-        leftCurtain.style.transform = 'translateX(-100%)';
-        rightCurtain.style.transform = 'translateX(100%)';
-    }, 500); // Adjust the delay as needed
-});
+//     setTimeout(() => {
+//         leftCurtain.style.transform = 'translateX(-100%)';
+//         rightCurtain.style.transform = 'translateX(100%)';
+//     }, 500); // Adjust the delay as needed
+// });
 
 
 /*==================== SHOW SCROLL UP ====================*/
@@ -32,3 +32,45 @@ const activeMenu = () => {
 
 
 toggleButton.addEventListener('click', activeMenu)
+
+
+
+// Function to fetch sunrise and sunset times using the Sunrise Sunset API
+async function getSunriseSunset() {
+    try {
+      const response = await fetch('https://api.sunrise-sunset.org/json?lat=20.5937&lng=78.9629&formatted=0');
+      const data = await response.json();
+      return data.results;
+    } catch (error) {
+      console.error('Error fetching sunrise and sunset data:', error);
+      return null;
+    }
+  }
+  
+  // Function to determine if it's currently day or night based on sunrise and sunset times
+  function isDaytime(sunrise, sunset) {
+    const now = new Date();
+    return now >= new Date(sunrise) && now <= new Date(sunset);
+  }
+  
+  // Function to update the body class based on the time of day
+  function updateBodyClass() {
+    getSunriseSunset().then(results => {
+      if (results) {
+        const { sunrise, sunset } = results;
+        const isDay = isDaytime(sunrise, sunset);
+        document.body.classList.toggle('dark-mode', isDay);
+        document.body.classList.toggle('light-mode', !isDay);
+      }
+    });
+  }
+  
+  // Call the updateBodyClass function to set the initial body class
+  updateBodyClass();
+  
+  // Set up an interval to update the body class every minute (in milliseconds)
+  setInterval(updateBodyClass, 60 * 1000);
+  
+
+
+

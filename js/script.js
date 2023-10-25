@@ -33,7 +33,7 @@ $(document).on('click', function(){
 // });
 
 // Set the date we're counting down to
-var countDownDate = new Date("dec 07, 2023 00:00:00").getTime();
+var countDownDate = new Date("dec 04, 2023 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -87,17 +87,7 @@ sr.reveal(`.pranjal,.footer,.newsletter__form`, { origin: 'right', delay: 100})
 
 
 
-// script.js
-// window.addEventListener('load', () => {
-//     console.log('in load')
-//     const leftCurtain = document.querySelector('.curtain_left');
-//     const rightCurtain = document.querySelector('.curtain_right');
 
-//     setTimeout(() => {
-//         leftCurtain.style.transform = 'translateX(-100%)';
-//         rightCurtain.style.transform = 'translateX(100%)';
-//     }, 5000); // Adjust the delay as needed
-// });
 
 // being a bit cool :p  
 var styles = [
