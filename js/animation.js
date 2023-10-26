@@ -1,11 +1,11 @@
-const rahul = new SplitType('.rahul');
+// const rahul = new SplitType('.rahul');
 
-gsap.to('.char',{
- y:0,
- stagger:0.05,
- delay:5,
- duration:1
-})
+// gsap.from('.rahul',{
+//  y:10,
+//  stagger:0.05,
+//  delay:5,
+//  duration:1
+// })
 
 
 
