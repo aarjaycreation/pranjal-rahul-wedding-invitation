@@ -37,7 +37,7 @@
    <div class="sakura-falling"></div>
    <img src="assets/img/right.png" alt="image-top-right" class="top-right-decoration">
    <img src="assets/img/right.png" alt="image-top-left" class="top-left-decoration">
-   <section id="media"></section>
+   <!-- <section id="media"></section> -->
    <div class="wrap">
       <div class="title">
          <h1 class="rahul">Rahul</h1>
@@ -56,6 +56,9 @@
    </div>
    <!--=============== Mahurat table ===============-->
    <div class="table_container">
+      <p class="dance-med">
+         Muhurta Date & Time
+      </p>
       <table class="responsive-table">
          <tbody class="responsive-table__body">
             <tr class="responsive-table__row">
@@ -83,28 +86,6 @@
             </tr>
          </tbody>
       </table>
-      <div class="table__flower">
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-            <div class="flower_square"></div>
-      </div>
    </div>
  
 <!--=============== time ===============-->
@@ -124,6 +105,28 @@
          </a>
       </div>
    </div>
+   <!-- <div class="table__flower">
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+      <div class="flower_square"></div>
+</div> -->
 <!--=============== CTA ===============-->
    <p class="CTA">
       Can't wait to celebrate auspicious moment of our family with you! <br>
@@ -135,7 +138,7 @@
    <section class="section newsletter">
       <div class="newsletter__container container">
          <p class="newsletter__description">
-            <span>Save the Date!</span> <br> Provide Your Email for Exclusive Wedding Updates
+            <span class="dance-med">Save the Date!</span> <br> Provide Your Email for Exclusive Wedding Updates
          </p>
 
          <form name="newsletter" class="newsletter__form">
@@ -151,6 +154,28 @@
           </div>
          
       </div>
+      <!-- <div class="flower_container">
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+       </div> -->
    </section>
    <!--=============== hindi text ===============-->
    <div>
@@ -160,37 +185,16 @@
     </div>
     <!--=============== music ===============-->
    <div class="music">
-      <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>
+      <audio autoplay controls src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>
    </div>
    <!--=============== happiness ===============-->
-   <div class="happiness">Join us in our happiness!
+   <div class="happiness"> <span class="dance-med">Join us in our happiness!</span> 
       <div class="socials">
          <a href="https://www.instagram.com/rahuljangir.works/" target="_blank"><i class='bx bxl-instagram'></i></a>
          <!-- <a href="https://aarjaycreation-works.web.app/" target="_blank"><i class='bx bx-briefcase-alt-2'></i></a> -->
       </div>
    </div>
-   <div class="flower_container">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
+
 
    <!--=============== bottom ===============-->
    <div class="footer">
@@ -236,7 +240,12 @@
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <!-- animation js  -->
    <script src="https://unpkg.com/split-type"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+   integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+   integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="./js/animation.js"></script>
    <script src="./js/scrollreveal.min.js"></script>
    <script src="./js/main.js"></script>

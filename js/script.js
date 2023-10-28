@@ -77,11 +77,16 @@ const sr = ScrollReveal({
 
 
 // sr.reveal(`.rahul`,{ delay: 300, origin: 'top' })
-sr.reveal(`.gif,.home_txt`,{ delay: 400, origin: 'top' })
-sr.reveal(`.happiness,.hindi_text`,{ delay: 800, origin: 'bottom' })
-sr.reveal(`.responsive-table__row`, { interval: 100 })
-sr.reveal(`.rahul,.home__bottom,.top-right-decoration,.top-left-decoration,.newsletter__description`, { origin: 'left', delay: 100})
-sr.reveal(`.pranjal,.footer,.newsletter__form`, { origin: 'right', delay: 100})
+sr.reveal(`.rahul`, { origin: 'left', delay: 700})
+sr.reveal(`.pranjal`, { origin: 'right', delay: 700})
+sr.reveal(`.gif,.home_txt`,{ delay: 1300, origin: 'top' })
+sr.reveal(`.top-right-decoration,.top-left-decoration`, { origin: 'left', delay: 2200})
+sr.reveal(`.responsive-table__row`, { interval: 200 })
+sr.reveal(`.table_container`,{ delay: 100, origin: 'top' })
+sr.reveal(`.happiness,.hindi_text`,{ delay: 400, origin: 'bottom' })
+sr.reveal(`.newsletter__description,.home__bottom`, { origin: 'left', delay: 400})
+sr.reveal(`.newsletter__form,.CTA`, { origin: 'right', delay: 400})
+
 
 
 
