@@ -84,8 +84,10 @@ sr.reveal(`.top-right-decoration,.top-left-decoration`, { origin: 'left', delay:
 sr.reveal(`.responsive-table__row`, { interval: 200 })
 sr.reveal(`.table_container`,{ delay: 100, origin: 'top' })
 sr.reveal(`.happiness,.hindi_text`,{ delay: 400, origin: 'bottom' })
+sr.reveal(`.social__links`,{ delay: 1000, origin: 'bottom',interval: 200 })
 sr.reveal(`.newsletter__description,.home__bottom`, { origin: 'left', delay: 400})
 sr.reveal(`.newsletter__form,.CTA`, { origin: 'right', delay: 400})
+
 
 
 
