@@ -1,12 +1,3 @@
-// window.addEventListener('load', () => {
-//     const leftCurtain = document.querySelector('.curtain_left');
-//     const rightCurtain = document.querySelector('.curtain_right');
-
-//     setTimeout(() => {
-//         leftCurtain.style.transform = 'translateX(-100%)';
-//         rightCurtain.style.transform = 'translateX(100%)';
-//     }, 500); // Adjust the delay as needed
-// });
 
 
 /*==================== SHOW SCROLL UP ====================*/
@@ -24,10 +15,6 @@ const toggleButton = document.getElementById('floating-toggle')
 
 const activeMenu = () => {
     toggleButton.classList.toggle('active')
-    // Wait for 5 seconds and remove the class
-    // setTimeout(() => {
-    //     toggleButton.classList.remove("active");
-    // }, 5000);
 }
 
 
